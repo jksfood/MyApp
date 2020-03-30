@@ -3,4 +3,5 @@
     <string name="getNotificationInfo">获取"通知栏"信息</string>
     <string name="histogram">直方图</string>
     <string name="pie">饼图</string>
+    <string name="heart">心图</string>
 </resources>

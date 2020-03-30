@@ -53,7 +53,7 @@ public class PieView extends View {
         pieData.add(new PieData("A",10.f, Color.BLUE));
         pieData.add(new PieData("B",12.f, Color.GREEN));
         pieData.add(new PieData("C",30.f, Color.YELLOW));
-        pieData.add(new PieData("d",16.f, Color.BLUE));
+        pieData.add(new PieData("d",46.f, Color.BLUE));
         pieData.add(new PieData("e",26.f, Color.BLACK));
         pieData.add(new PieData("f",41.f, Color.RED));
         pieData.add(new PieData("g",42.f, Color.GRAY));
@@ -88,7 +88,7 @@ public class PieView extends View {
 
             if (data.getNumber() == mMax){
                 canvas.save();
-                canvas.translate(mLineStartX * 0.1f, mLineStartY * 0.1f);
+                canvas.translate(mLineStartX * 0.05f, mLineStartY * 0.05f);
                 canvas.drawArc(mRect, mStartAngle, mSweepAngle, true,mPaint);
             }else {
                 canvas.drawArc(mRect, mStartAngle, mSweepAngle - 1.0f, true,mPaint);
