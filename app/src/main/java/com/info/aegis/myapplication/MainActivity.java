@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.info.aegis.myapplication.activity.GetWeChatNotificationActivity;
 import com.info.aegis.myapplication.activity.HistogramActivity;
+import com.info.aegis.myapplication.activity.PieActivity;
 import com.info.aegis.myapplication.adapter.MainActivityRecyclerViewAdapter;
 import com.info.aegis.myapplication.model.MainActivityRecyclerViewModel;
 
@@ -46,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
                     case 1:
                         startActivity(new Intent(MainActivity.this, HistogramActivity.class));
                         break;
+                    case 2:
+                        startActivity(new Intent(MainActivity.this, PieActivity.class));
+                        break;
                 }
             }
         });
@@ -54,5 +58,6 @@ public class MainActivity extends AppCompatActivity {
     private void initData() {
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.getNotificationInfo)));
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.histogram)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.pie)));
     }
 }
