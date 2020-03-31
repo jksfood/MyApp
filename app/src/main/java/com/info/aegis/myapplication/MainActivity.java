@@ -2,13 +2,13 @@ package com.info.aegis.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.info.aegis.myapplication.activity.FiveStarActivity;
 import com.info.aegis.myapplication.activity.GetWeChatNotificationActivity;
 import com.info.aegis.myapplication.activity.HeartActivity;
 import com.info.aegis.myapplication.activity.HistogramActivity;
@@ -54,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
                     case 3:
                         startActivity(new Intent(MainActivity.this, HeartActivity.class));
                         break;
+                    case 4:
+                        startActivity(new Intent(MainActivity.this, FiveStarActivity.class));
+                        break;
                 }
             }
         });
@@ -64,5 +67,6 @@ public class MainActivity extends AppCompatActivity {
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.histogram)));
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.pie)));
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.heart)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.fiveStar)));
     }
 }
