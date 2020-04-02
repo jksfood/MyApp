@@ -10,12 +10,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.info.aegis.myapplication.activity.FiveStarActivity;
 import com.info.aegis.myapplication.activity.GetWeChatNotificationActivity;
-import com.info.aegis.myapplication.activity.GradientActivity;
+import com.info.aegis.myapplication.activity.LinearGradientActivity;
 import com.info.aegis.myapplication.activity.HeartActivity;
 import com.info.aegis.myapplication.activity.HistogramActivity;
 import com.info.aegis.myapplication.activity.PieActivity;
+import com.info.aegis.myapplication.activity.RadiationGradientActivity;
 import com.info.aegis.myapplication.adapter.MainActivityRecyclerViewAdapter;
 import com.info.aegis.myapplication.model.MainActivityRecyclerViewModel;
+import com.info.aegis.myapplication.view.RadiationGradientView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,7 +61,10 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, FiveStarActivity.class));
                         break;
                     case 5:
-                        startActivity(new Intent(MainActivity.this, GradientActivity.class));
+                        startActivity(new Intent(MainActivity.this, LinearGradientActivity.class));
+                        break;
+                    case 6:
+                        startActivity(new Intent(MainActivity.this, RadiationGradientActivity.class));
                         break;
                 }
             }
@@ -73,5 +78,6 @@ public class MainActivity extends AppCompatActivity {
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.heart)));
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.fiveStar)));
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.linearGradient)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.radiationGradient)));
     }
 }

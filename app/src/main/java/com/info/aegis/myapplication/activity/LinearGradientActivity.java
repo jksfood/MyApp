@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.info.aegis.myapplication.R;
 
-public class GradientActivity extends AppCompatActivity {
+public class LinearGradientActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

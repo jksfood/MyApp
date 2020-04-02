@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".activity.LinearGradientActivity">
+    android:layout_height="match_parent"
+    tools:context=".activity.RadiationGradientActivity">
+    
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="3000px">
-        <com.info.aegis.myapplication.view.LinearGradientView
+        <com.info.aegis.myapplication.view.RadiationGradientView
             android:layout_width="match_parent"
             android:layout_height="3000px" />
     </RelativeLayout>
+
 </ScrollView>
