@@ -3,6 +3,7 @@
     <string name="getNotificationInfo">获取"通知栏"信息</string>
     <string name="histogram">直方图</string>
     <string name="pie">饼图</string>
-    <string name="heart">图</string>
+    <string name="heart">心图</string>
     <string name="fiveStar">五角星</string>
+    <string name="linearGradient">线性渐变</string>
 </resources>

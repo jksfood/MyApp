@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.info.aegis.myapplication.activity.FiveStarActivity;
 import com.info.aegis.myapplication.activity.GetWeChatNotificationActivity;
+import com.info.aegis.myapplication.activity.GradientActivity;
 import com.info.aegis.myapplication.activity.HeartActivity;
 import com.info.aegis.myapplication.activity.HistogramActivity;
 import com.info.aegis.myapplication.activity.PieActivity;
@@ -57,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
                     case 4:
                         startActivity(new Intent(MainActivity.this, FiveStarActivity.class));
                         break;
+                    case 5:
+                        startActivity(new Intent(MainActivity.this, GradientActivity.class));
+                        break;
                 }
             }
         });
@@ -68,5 +72,6 @@ public class MainActivity extends AppCompatActivity {
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.pie)));
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.heart)));
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.fiveStar)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.linearGradient)));
     }
 }
