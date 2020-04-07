@@ -11,15 +11,23 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.info.aegis.myapplication.activity.BitmapShaderActivity;
 import com.info.aegis.myapplication.activity.ColorMatrixColorFilterActivity;
 import com.info.aegis.myapplication.activity.ComposeShaderActivity;
+import com.info.aegis.myapplication.activity.FillPathActivity;
 import com.info.aegis.myapplication.activity.FiveStarActivity;
 import com.info.aegis.myapplication.activity.GetWeChatNotificationActivity;
 import com.info.aegis.myapplication.activity.LightColorFilterActivity;
 import com.info.aegis.myapplication.activity.LinearGradientActivity;
 import com.info.aegis.myapplication.activity.HeartActivity;
 import com.info.aegis.myapplication.activity.HistogramActivity;
+import com.info.aegis.myapplication.activity.MaskFilterActivity;
+import com.info.aegis.myapplication.activity.PathEffectActivity;
 import com.info.aegis.myapplication.activity.PieActivity;
 import com.info.aegis.myapplication.activity.RadiationGradientActivity;
+import com.info.aegis.myapplication.activity.ShadowLayerActivity;
+import com.info.aegis.myapplication.activity.StrokeCapActivity;
+import com.info.aegis.myapplication.activity.StrokeJoinActivity;
+import com.info.aegis.myapplication.activity.StrokeJoinMiterLengthActivity;
 import com.info.aegis.myapplication.activity.SweepGradientActivity;
+import com.info.aegis.myapplication.activity.TextPathActivity;
 import com.info.aegis.myapplication.activity.XferModeActivity;
 import com.info.aegis.myapplication.adapter.MainActivityRecyclerViewAdapter;
 import com.info.aegis.myapplication.model.MainActivityRecyclerViewModel;
@@ -91,6 +99,30 @@ public class MainActivity extends AppCompatActivity {
                     case 12:
                         startActivity(new Intent(MainActivity.this, XferModeActivity.class));
                         break;
+                    case 13:
+                        startActivity(new Intent(MainActivity.this, StrokeCapActivity.class));
+                        break;
+                    case 14:
+                        startActivity(new Intent(MainActivity.this, StrokeJoinActivity.class));
+                        break;
+                    case 15:
+                        startActivity(new Intent(MainActivity.this, StrokeJoinMiterLengthActivity.class));
+                        break;
+                    case 16:
+                        startActivity(new Intent(MainActivity.this, PathEffectActivity.class));
+                        break;
+                    case 17:
+                        startActivity(new Intent(MainActivity.this, ShadowLayerActivity.class));
+                        break;
+                    case 18:
+                        startActivity(new Intent(MainActivity.this, MaskFilterActivity.class));
+                        break;
+                    case 19:
+                        startActivity(new Intent(MainActivity.this, FillPathActivity.class));
+                        break;
+                    case 20:
+                        startActivity(new Intent(MainActivity.this, TextPathActivity.class));
+                        break;
                 }
             }
         });
@@ -110,5 +142,13 @@ public class MainActivity extends AppCompatActivity {
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.lightColorFilter)));
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.colorMatrixColorFilter)));
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.xFerMode)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.strokeCap)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.strokeJoin)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.strokeJoinMiterLength)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.pathEffect)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.shadowLayer)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.maskFilter)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.fillPath)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.textPath)));
     }
 }

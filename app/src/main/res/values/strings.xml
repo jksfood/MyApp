@@ -13,4 +13,12 @@
     <string name="lightColorFilter">光照效果</string>
     <string name="colorMatrixColorFilter">超级厉害的ColorMatrixColorFilter</string>
     <string name="xFerMode">XFerMode 图像结合方式</string>
+    <string name="strokeCap">线条头的形状</string>
+    <string name="strokeJoin">线条拐角的形状</string>
+    <string name="strokeJoinMiterLength">线条拐角为尖角时，延长线的最大长度</string>
+    <string name="pathEffect">路径效果</string>
+    <string name="shadowLayer">阴影效果</string>
+    <string name="maskFilter">过滤效果</string>
+    <string name="fillPath">线条路径</string>
+    <string name="textPath">文字路径</string>
 </resources>

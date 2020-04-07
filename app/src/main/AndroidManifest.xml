@@ -12,7 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.XferModeActivity"></activity>
+        <activity android:name=".activity.TextPathActivity"></activity>
+        <activity android:name=".activity.FillPathActivity" />
+        <activity android:name=".activity.MaskFilterActivity" />
+        <activity android:name=".activity.ShadowLayerActivity" />
+        <activity android:name=".activity.PathEffectActivity" />
+        <activity android:name=".activity.StrokeJoinMiterLengthActivity" />
+        <activity android:name=".activity.StrokeJoinActivity" />
+        <activity android:name=".activity.StrokeCapActivity" />
+        <activity android:name=".activity.XferModeActivity" />
         <activity android:name=".activity.ColorMatrixColorFilterActivity" />
         <activity android:name=".activity.LightColorFilterActivity" />
         <activity android:name=".activity.ComposeShaderActivity" />
