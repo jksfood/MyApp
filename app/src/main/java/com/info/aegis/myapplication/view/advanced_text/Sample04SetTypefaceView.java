@@ -1,4 +1,4 @@
-package com.info.aegis.myapplication.view.text;
+package com.info.aegis.myapplication.view.advanced_text;
 
 import android.content.Context;
 import android.graphics.Canvas;

@@ -1,4 +1,4 @@
-package com.info.aegis.myapplication.view.text;
+package com.info.aegis.myapplication.view.advanced_text;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -8,26 +8,26 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-public class Sample06SetStrikeThruTextView extends View {
+public class Sample09SetTextScaleXView extends View {
     Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     String text = "Hello Jksfood";
 
-    public Sample06SetStrikeThruTextView(Context context) {
+    public Sample09SetTextScaleXView(Context context) {
         super(context);
     }
 
-    public Sample06SetStrikeThruTextView(Context context, @Nullable AttributeSet attrs) {
+    public Sample09SetTextScaleXView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public Sample06SetStrikeThruTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public Sample09SetTextScaleXView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
     {
         paint.setTextSize(60);
 
-        paint.setStrikeThruText(true);
+        paint.setTextScaleX(1.2f);
     }
 
     @Override

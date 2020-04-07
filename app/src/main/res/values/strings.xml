@@ -21,7 +21,7 @@
     <string name="maskFilter">过滤效果</string>
     <string name="fillPath">线条路径</string>
     <string name="textPath">文字路径</string>
-    <string name="textPaint">文字的绘制</string>
+    <string name="textPaint">文字的高级绘制</string>
     <string name="title_draw_text">drawText()</string>
     <string name="title_static_layout">StaticLayout</string>
     <string name="title_set_text_size">setTextSize()</string>
