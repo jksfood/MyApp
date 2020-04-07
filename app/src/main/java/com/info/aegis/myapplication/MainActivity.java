@@ -8,15 +8,22 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.info.aegis.myapplication.activity.BitmapShaderActivity;
+import com.info.aegis.myapplication.activity.ColorMatrixColorFilterActivity;
+import com.info.aegis.myapplication.activity.ComposeShaderActivity;
 import com.info.aegis.myapplication.activity.FiveStarActivity;
 import com.info.aegis.myapplication.activity.GetWeChatNotificationActivity;
+import com.info.aegis.myapplication.activity.LightColorFilterActivity;
 import com.info.aegis.myapplication.activity.LinearGradientActivity;
 import com.info.aegis.myapplication.activity.HeartActivity;
 import com.info.aegis.myapplication.activity.HistogramActivity;
 import com.info.aegis.myapplication.activity.PieActivity;
 import com.info.aegis.myapplication.activity.RadiationGradientActivity;
+import com.info.aegis.myapplication.activity.SweepGradientActivity;
+import com.info.aegis.myapplication.activity.XferModeActivity;
 import com.info.aegis.myapplication.adapter.MainActivityRecyclerViewAdapter;
 import com.info.aegis.myapplication.model.MainActivityRecyclerViewModel;
+import com.info.aegis.myapplication.view.ComposeShaderView;
 import com.info.aegis.myapplication.view.RadiationGradientView;
 
 import java.util.ArrayList;
@@ -66,6 +73,24 @@ public class MainActivity extends AppCompatActivity {
                     case 6:
                         startActivity(new Intent(MainActivity.this, RadiationGradientActivity.class));
                         break;
+                    case 7:
+                        startActivity(new Intent(MainActivity.this, SweepGradientActivity.class));
+                        break;
+                    case 8:
+                        startActivity(new Intent(MainActivity.this, BitmapShaderActivity.class));
+                        break;
+                    case 9:
+                        startActivity(new Intent(MainActivity.this, ComposeShaderActivity.class));
+                        break;
+                    case 10:
+                        startActivity(new Intent(MainActivity.this, LightColorFilterActivity.class));
+                        break;
+                    case 11:
+                        startActivity(new Intent(MainActivity.this, ColorMatrixColorFilterActivity.class));
+                        break;
+                    case 12:
+                        startActivity(new Intent(MainActivity.this, XferModeActivity.class));
+                        break;
                 }
             }
         });
@@ -79,5 +104,11 @@ public class MainActivity extends AppCompatActivity {
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.fiveStar)));
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.linearGradient)));
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.radiationGradient)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.sweepGradient)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.bitmapShader)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.composeShader)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.lightColorFilter)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.colorMatrixColorFilter)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.xFerMode)));
     }
 }

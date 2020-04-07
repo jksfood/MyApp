@@ -7,4 +7,10 @@
     <string name="fiveStar">五角星</string>
     <string name="linearGradient">线性渐变</string>
     <string name="radiationGradient">辐射渐变</string>
+    <string name="sweepGradient">扫描渐变</string>
+    <string name="bitmapShader">Bitmap着色、填充</string>
+    <string name="composeShader">混合着色器</string>
+    <string name="lightColorFilter">光照效果</string>
+    <string name="colorMatrixColorFilter">超级厉害的ColorMatrixColorFilter</string>
+    <string name="xFerMode">XFerMode 图像结合方式</string>
 </resources>

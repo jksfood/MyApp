@@ -12,7 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.RadiationGradientActivity"></activity>
+        <activity android:name=".activity.XferModeActivity"></activity>
+        <activity android:name=".activity.ColorMatrixColorFilterActivity" />
+        <activity android:name=".activity.LightColorFilterActivity" />
+        <activity android:name=".activity.ComposeShaderActivity" />
+        <activity android:name=".activity.BitmapShaderActivity" />
+        <activity android:name=".activity.SweepGradientActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".activity.RadiationGradientActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".activity.LinearGradientActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
