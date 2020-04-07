@@ -27,6 +27,7 @@ import com.info.aegis.myapplication.activity.StrokeCapActivity;
 import com.info.aegis.myapplication.activity.StrokeJoinActivity;
 import com.info.aegis.myapplication.activity.StrokeJoinMiterLengthActivity;
 import com.info.aegis.myapplication.activity.SweepGradientActivity;
+import com.info.aegis.myapplication.activity.TextPaintActivity;
 import com.info.aegis.myapplication.activity.TextPathActivity;
 import com.info.aegis.myapplication.activity.XferModeActivity;
 import com.info.aegis.myapplication.adapter.MainActivityRecyclerViewAdapter;
@@ -123,6 +124,9 @@ public class MainActivity extends AppCompatActivity {
                     case 20:
                         startActivity(new Intent(MainActivity.this, TextPathActivity.class));
                         break;
+                    case 21:
+                        startActivity(new Intent(MainActivity.this, TextPaintActivity.class));
+                        break;
                 }
             }
         });
@@ -150,5 +154,6 @@ public class MainActivity extends AppCompatActivity {
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.maskFilter)));
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.fillPath)));
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.textPath)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.textPaint)));
     }
 }
