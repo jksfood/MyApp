@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.info.aegis.myapplication.activity.BitmapShaderActivity;
+import com.info.aegis.myapplication.activity.ClipMatrixActivity;
 import com.info.aegis.myapplication.activity.ColorMatrixColorFilterActivity;
 import com.info.aegis.myapplication.activity.ComposeShaderActivity;
 import com.info.aegis.myapplication.activity.FillPathActivity;
@@ -127,6 +128,9 @@ public class MainActivity extends AppCompatActivity {
                     case 21:
                         startActivity(new Intent(MainActivity.this, TextPaintActivity.class));
                         break;
+                    case 22:
+                        startActivity(new Intent(MainActivity.this, ClipMatrixActivity.class));
+                        break;
                 }
             }
         });
@@ -155,5 +159,6 @@ public class MainActivity extends AppCompatActivity {
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.fillPath)));
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.textPath)));
         mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.textPaint)));
+        mDataList.add(new MainActivityRecyclerViewModel(getResources().getString(R.string.clip_matrix)));
     }
 }
