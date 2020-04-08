@@ -60,6 +60,9 @@
     <string name="title_camera_rotate_hitting_face">Camera.rotateX/Y() 糊脸修正</string>
     <string name="title_flipboard">翻页效果</string>
     <string name="img_text">imageview上添加文字</string>
+    <string name="linearlayout_spot">linearlayout 绘制斑点</string>
+    <string name="img_tag">imageview 添加标签</string>
+    <string name="edittext_bg">edittext 背景</string>
 
 
 </resources>

@@ -12,23 +12,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.view.PaintUsageActivity_2"></activity>
-        <activity android:name=".activity.view.DrawingBasicActivity_1" />
-        <activity android:name=".activity.base.BaseActivity" />
-        <activity android:name=".activity.view.CanvasOrderActivity_5" />
-        <activity android:name=".activity.view.ClipMatrixActivity_4" />
-        <activity android:name=".activity.view.TextPaintActivity_3" />
-        <activity android:name=".activity.utils.GetWeChatNotificationActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.utils.GetWeChatNotificationActivity"
+            android:label="@string/getNotificationInfo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
 
         <service
@@ -40,6 +37,42 @@
                 <action android:name="android.service.notification.NotificationListenerService" />
             </intent-filter>
         </service>
+
+        <activity android:name=".activity.view.DrawingBasicActivity_1"
+            android:label="@string/drawing_basic">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".activity.view.PaintUsageActivity_2"
+            android:label="@string/paint_usage">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".activity.view.TextPaintActivity_3"
+            android:label="@string/text_paint">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".activity.view.ClipMatrixActivity_4"
+            android:label="@string/clip_matrix">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".activity.view.DrawOrderActivity_5"
+            android:label="@string/draw_order">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
     </application>
 
 </manifest>

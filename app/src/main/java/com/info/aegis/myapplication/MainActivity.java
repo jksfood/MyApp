@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.info.aegis.myapplication.activity.utils.GetWeChatNotificationActivity;
-import com.info.aegis.myapplication.activity.view.CanvasOrderActivity_5;
+import com.info.aegis.myapplication.activity.view.DrawOrderActivity_5;
 import com.info.aegis.myapplication.activity.view.ClipMatrixActivity_4;
 import com.info.aegis.myapplication.activity.view.DrawingBasicActivity_1;
 import com.info.aegis.myapplication.activity.view.PaintUsageActivity_2;
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, ClipMatrixActivity_4.class));
                         break;
                     case 5:
-                        startActivity(new Intent(MainActivity.this, CanvasOrderActivity_5.class));
+                        startActivity(new Intent(MainActivity.this, DrawOrderActivity_5.class));
                         break;
                 }
             }
