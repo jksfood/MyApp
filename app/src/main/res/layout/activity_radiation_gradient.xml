@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="3000px">
-        <com.info.aegis.myapplication.view.RadiationGradientView
+        <com.info.aegis.myapplication.view.paint_usage.RadiationGradientView
             android:layout_width="match_parent"
             android:layout_height="3000px" />
     </RelativeLayout>

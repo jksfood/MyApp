@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.info.aegis.myapplication.view.advanced_text.Sample14GetFontMetricsView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.info.aegis.myapplication.view.text_paint.Sample14GetFontMetricsView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" />

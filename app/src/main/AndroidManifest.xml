@@ -12,57 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.ClipMatrixActivity"></activity>
-        <activity android:name=".activity.TextPaintActivity" />
-        <activity android:name=".activity.TextPathActivity" />
-        <activity android:name=".activity.FillPathActivity" />
-        <activity android:name=".activity.MaskFilterActivity" />
-        <activity android:name=".activity.ShadowLayerActivity" />
-        <activity android:name=".activity.PathEffectActivity" />
-        <activity android:name=".activity.StrokeJoinMiterLengthActivity" />
-        <activity android:name=".activity.StrokeJoinActivity" />
-        <activity android:name=".activity.StrokeCapActivity" />
-        <activity android:name=".activity.XferModeActivity" />
-        <activity android:name=".activity.ColorMatrixColorFilterActivity" />
-        <activity android:name=".activity.LightColorFilterActivity" />
-        <activity android:name=".activity.ComposeShaderActivity" />
-        <activity android:name=".activity.BitmapShaderActivity" />
-        <activity android:name=".activity.SweepGradientActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity android:name=".activity.RadiationGradientActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity android:name=".activity.LinearGradientActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity android:name=".activity.FiveStarActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity android:name=".activity.HeartActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity android:name=".activity.PieActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity android:name=".activity.HistogramActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity android:name=".activity.GetWeChatNotificationActivity">
+        <activity android:name=".activity.view.PaintUsageActivity_2"></activity>
+        <activity android:name=".activity.view.DrawingBasicActivity_1" />
+        <activity android:name=".activity.base.BaseActivity" />
+        <activity android:name=".activity.view.CanvasOrderActivity_5" />
+        <activity android:name=".activity.view.ClipMatrixActivity_4" />
+        <activity android:name=".activity.view.TextPaintActivity_3" />
+        <activity android:name=".activity.utils.GetWeChatNotificationActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />

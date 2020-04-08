@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">JksfoodApp</string>
-    <string name="getNotificationInfo">获取"通知栏"信息</string>
+
+    <string name="getNotificationInfo">工具 - 获取"通知栏"信息</string>
+
+    <string name="drawing_basic">基础绘制 - 1</string>
+    <string name="paint_usage">Paint详解 - 2</string>
+    <string name="text_paint">文字绘制 - 3</string>
+    <string name="clip_matrix">几何变换、裁切 - 4</string>
+    <string name="draw_order">canvas 绘制顺序 - 5</string>
+
     <string name="histogram">直方图</string>
     <string name="pie">饼图</string>
     <string name="heart">心图</string>
@@ -16,11 +24,11 @@
     <string name="strokeCap">线条头的形状</string>
     <string name="strokeJoin">线条拐角的形状</string>
     <string name="strokeJoinMiterLength">线条拐角为尖角时，延长线的最大长度</string>
-    <string name="pathEffect">路径效果</string>
+    <string name="pathEffect">路径加效果</string>
     <string name="shadowLayer">阴影效果</string>
     <string name="maskFilter">过滤效果</string>
-    <string name="fillPath">线条路径</string>
-    <string name="textPath">文字路径</string>
+    <string name="fillPath">获取线条路径</string>
+    <string name="textPath">获取文字路径</string>
     <string name="textPaint">文字的高级绘制 专栏</string>
     <string name="title_draw_text">drawText()</string>
     <string name="title_static_layout">StaticLayout</string>
@@ -38,7 +46,6 @@
     <string name="title_get_font_metrics">getFontMetrics()</string>
     <string name="title_fill_path">setFillPath()</string>
     <string name="title_text_path">setTextPath()</string>
-    <string name="clip_matrix">几何变换、裁切  专栏</string>
     <string name="title_clip_rect">clipRect()</string>
     <string name="title_clip_path">clipPath()</string>
     <string name="title_translate">translate()</string>
@@ -52,4 +59,7 @@
     <string name="title_camera_rotate">Camera.rotateX/Y()</string>
     <string name="title_camera_rotate_hitting_face">Camera.rotateX/Y() 糊脸修正</string>
     <string name="title_flipboard">翻页效果</string>
+    <string name="img_text">imageview上添加文字</string>
+
+
 </resources>
